@@ -83,6 +83,33 @@ app.put('/books/:id', async (req, res) => {
   }
 });
 
+app.delete('/books/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    // Check if the provided ID is valid
+    if (!mongoose.isValidObjectId(id)) {
+      return res.status(400).send('Invalid book ID');
+    }
+
+    // Attempt to find and delete the book by ID
+    const deletedBook = await Book.findByIdAndRemove(id);
+
+    if (!deletedBook) {
+      return res.status(404).send('Book not found');
+    }
+
+    // Book was successfully deleted
+    return res.status(200).json({
+      message: 'Book deleted successfully',
+      deletedBook,
+    });
+  } catch (error) {
+    console.error('Error', error);
+    res.status(500).send('Server error');
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
