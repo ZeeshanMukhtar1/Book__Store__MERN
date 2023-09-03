@@ -58,6 +58,30 @@ app.get('/books/:id', async (req, res) => {
     res.status(500).send('Server error');
   }
 });
+// Updating a cetain book by ID
+app.put('/books/:id', async (req, res) => {
+  try {
+    if (!req.body.title || !req.body.author || !req.body.publishYear) {
+      return res.status(400).send('Please fill all the fields');
+    } else {
+      const { id } = req.params;
+      const updatedBook = await Book.findByIdAndUpdate(id, req.body, {
+        new: true,
+      });
+
+      // Logging the success  the message separately
+      console.log('Book Updated successfully', updatedBook);
+
+      // Send the response with JSON data
+      return res.status(200).json({
+        books: updatedBook,
+      });
+    }
+  } catch (error) {
+    console.log('Error', error);
+    res.status(500).send('Server error');
+  }
+});
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
