@@ -32,12 +32,25 @@ app.post('/books', async (req, res) => {
     res.status(500).send('Server error');
   }
 });
-
+// getting all books at once
 app.get('/books', async (req, res) => {
   try {
     const books = await Book.find();
     return res.status(200).json({
       count: books.length,
+      books: books,
+    });
+  } catch (error) {
+    console.log('Error ', error);
+    res.status(500).send('Server error');
+  }
+});
+// getting specific book by ID
+app.get('/books/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const books = await Book.findById(id);
+    return res.status(200).json({
       books: books,
     });
   } catch (error) {
