@@ -8,7 +8,7 @@ Welcome to the Bookstore MERN Stack App repository! This web application is desi
 
 ### Features
 
-- Easily add new books to your collection by providing book details such as title, author, genre, and more.
+- Easily add new books to your collection by providing book details such as title, author and Publish Year.
 
 - Update book information whenever necessary, ensuring your library is always up to date.
 
