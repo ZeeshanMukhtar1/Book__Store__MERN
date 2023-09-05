@@ -19,21 +19,13 @@ Welcome to the Bookstore MERN Stack App repository! This web application is desi
 
 - Table View: A tabular view that provides a structured overview of your books.
 
+## Screenshot
+
+![Preview](./frontend/src/assets/Img/Preview.png)
+
 #### Developer
 
 - [@ZeeshanMukhtar1](https://www.linkedin.com/in/zeeshanmukhtar1/)
-
-#### Project Demo
-
-Insert gif or link to demo
-
-#### Tech Stack
-
-![Tech Stack Used](https://cdn.hashnode.com/res/hashnode/image/upload/v1671978660506/65893b97-1723-48d6-8ef9-f48c84518e08.png)
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## 🔗 Links
 
