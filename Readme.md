@@ -23,6 +23,7 @@ Welcome to the Bookstore MERN Stack App repository! This web application is desi
 
 ![Screenshot1](./frontend/src/assets/Img/demo2.png)
 ![Screenshot1](./frontend/src/assets/Img/demo.png)
+![Loading](./frontend/public/media/Loading__demo.gif)
 
 #### Developer
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Spinner from '../../components/Spinner';
+import Spinner from '../../components/Spinner/Spinner';
 import { Link } from 'react-router-dom';
 import { AiOutlineEdit } from 'react-icons/ai';
 import { BsInfoCircle } from 'react-icons/bs';
@@ -8,23 +8,27 @@ import { MdOutlineAddBox, MdOutlineDelete } from 'react-icons/md';
 import BooksTable from '../../components/home/BooksTable';
 import BooksCard from '../../components/home/BooksCard';
 import './Home.scss';
+
 const Home = () => {
   const [books, setBooks] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true); // Initially, set loading to true
   const [showType, setShowType] = useState('table');
 
   useEffect(() => {
-    setLoading(true);
-    axios
-      .get('http://localhost:5555/books')
-      .then((response) => {
-        setBooks(response.data.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
-        setLoading(false);
-      });
+    // Simulate an API call with a 3-second delay
+    const delay = 1500; // 1.5seconds
+    setTimeout(() => {
+      axios
+        .get('http://localhost:5555/books')
+        .then((response) => {
+          setBooks(response.data.data);
+          setLoading(false); // Set loading to false after the API call
+        })
+        .catch((error) => {
+          console.log(error);
+          setLoading(false); // Set loading to false on error
+        });
+    }, delay);
   }, []);
 
   return (
