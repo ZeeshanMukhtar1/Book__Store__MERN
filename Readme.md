@@ -4,7 +4,7 @@ Bookstore MERN Stack App
 
 ### Project Description
 
-Welcome to the Bookstore MERN Stack App repository! This web application is designed to help you manage your book collection efficiently. It utilizes a modern tech stack, including [React](https://legacy.reactjs.org/) for the front end, [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-pk_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624545&adgroup=115749719183&cq_cmp=12212624545&gad=1&gclid=CjwKCAjwo9unBhBTEiwAipC11--H9qPPOX3703XSeRHJqSe0ZJJ2Wmqq1R5XimEiWvgFnK2UIdbucxoCmMUQAvD_BwE) for cloud-based database storage, [Express](https://expressjs.com/) for the backend, and incorporates beautiful alerts for an enhanced user experience. Furthermore, the app employs [Tailwind CSS](https://tailwindcss.com/) for a sleek and responsive design.
+Welcome to the Bookstore MERN Stack App repository! This web application is designed to help you manage your book collection efficiently. It utilizes a modern tech stack, including [React](https://legacy.reactjs.org/) for the front end, [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-pk_ps-all_desktop_eng_lead&utm_term=mongodb%20atlas&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12212624545&adgroup=115749719183&cq_cmp=12212624545&gad=1&gclid=CjwKCAjwo9unBhBTEiwAipC11--H9qPPOX3703XSeRHJqSe0ZJJ2Wmqq1R5XimEiWvgFnK2UIdbucxoCmMUQAvD_BwE) for cloud-based database storage, [Express](https://expressjs.com/) for the backend, and incorporates beautiful alerts for an enhanced user experience. Furthermore, the app employs [Tailwind CSS](https://tailwindcss.com/) for a sleek and responsive design and [Saas](https://sass-lang.com/) for custom styling.
 
 ### Features
 
@@ -22,7 +22,7 @@ Welcome to the Bookstore MERN Stack App repository! This web application is desi
 ## Screenshot
 
 ![Screenshot1](./frontend/src/assets/Img/demo2.png)
-![Screenshot1](./frontend/src/assets/Img/demo2.png)
+![Screenshot1](./frontend/src/assets/Img/demo.png)
 
 #### Developer
 
