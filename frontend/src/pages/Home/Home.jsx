@@ -16,7 +16,7 @@ const Home = () => {
 
   useEffect(() => {
     // Simulate an API call with a 3-second delay
-    const delay = 1500; // 1.5seconds
+    const delay = 700; // 0.7 second
     setTimeout(() => {
       axios
         .get('http://localhost:5555/books')
